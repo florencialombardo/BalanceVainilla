@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Balance</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="cuerpo">
+                <div class="column">
+                    <h2>Premio</h2>
+                    <!-- Aquí se agregarán dinámicamente los artículos del carrito -->
+                    <ul class="cart-item">
+                        <li>
+                            <div>
+                                <p>Artículo 1 - 50 puntos</p>
+                                <button class="remove-item">Eliminar</button>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="column">
+                    <div class="cuerpo">
+                        <div> 
+                            <p>Puntos:</p>
+                            <div id="total-puntos">130</div>
+                        </div>
+                        
+                        <div>
+                            <p>Premio:</p>
+                            <div id="total-carrito">100</div>
+                        </div>
+                    </div>
+                
+                    <div>
+                        <button id="canjear-puntos" disabled>Canjear</button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="button-wrapper">   
+            <button id="volver">Volver</button>
+        </div>
+    </main>
+    <footer>
+        <p>Recompensa tu esfuerzo</p>
+    </footer>
+    <script src="./scripts.js"></script>
+</body>
+</html>

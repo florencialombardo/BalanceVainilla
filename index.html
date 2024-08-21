@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Balance</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="cuerpo">
+                <div class="column">
+                    <section class="points-section">
+                        <div class="points-and-cart">
+                            <div> 
+                                <p>Puntos Totales</p>
+                                <div id="total-puntos">0</div>
+                            </div>
+                            <div>
+                                <p>Puntos para el Premio Seleccionado</p>
+                                <div id="total-carrito">0</div>
+                            </div>
+                        
+                            <button id="ver-premio">Ver Premio</button>
+                        </div>
+                        
+                    </section>
+                
+                
+                    <section class="store-section column">
+                        <h2>Tienda de Premios</h2>
+
+                        <ul id="premios" class="premios">
+                            <li class="premio-item" data-puntos="500"> 
+                                <img src="./img/LEGOTechnik.png" alt="Jeep">
+                                <a href="http://www.mercadolibre.com.ar/lego-technic-42122-jeep-wrangler-665-piezas-cantidad-de-piezas-665/p/MLA24554381#polycard_client=bookmarks&wid=MLA1843959882&sid=bookmarks" target="_blank" rel="noopener noreferrer">
+                                    Jeep LEGO Technik
+
+                                </a> - 500 Puntos
+                            </li>
+                            <li class="premio-item" data-puntos="100">
+                                <img src="./img/LEGOTechnicMontacargas.png" alt="Montacargas">
+                                <a href="https://articulo.mercadolibre.com.ar/MLA-1429320977-bloque-lego-technic-autoelevador-con-palet-78pzas-_JM#polycard_client=bookmarks" target="_blank" rel="noopener noreferrer">
+                                    Montacargas LEGO Technic
+
+                                </a> - 100 puntos
+
+                            </li>
+                            <li class="premio-item" data-puntos="50">Pedir Comida - 50 puntos</li>
+                            <li class="premio-item" data-puntos="400">Jean - 400 puntos</li>
+                            <li class="premio-item" data-puntos="100">Torta Canela Fina - 1000 puntos</li>
+                            
+                        </ul>
+                    <button id="seleccionar-premio">Agregar Objetivos</button>
+                    
+                </div>
+                <div class="column">
+                    <h2>Tareas</h2>
+                    <ul class="tasks task-list">
+                        <li class="task-item" data-puntos="50">Supermercado + 50 puntos</li>
+                        <li class="task-item" data-puntos="30">Basura + 30 puntos</li>
+                        <li class="task-item" data-puntos="40">Ropa Lavar + 40 puntos</li>
+                        <li class="task-item" data-puntos="40">Platos Lavar + 40 puntos</li>
+                        <li class="task-item" data-puntos="1000">Limpiar baño + 1000 puntos</li>
+                        <li class="task-item" data-puntos="150">Ordenar ropa + 150 puntos</li>
+                        <li class="task-item" data-puntos="15">Barrer + 15 puntos</li>
+                        <li class="task-item" data-puntos="200">Cambiar sabanas + 200 puntos</li>
+                        <li class="task-item" data-puntos="80">Limpiar microondas + 80 puntos</li>
+                        <li class="task-item" data-puntos="2000">Cambiar cubiertas + 2000 puntos</li>
+                        <li class="task-item" data-puntos="300">Pagar expensas + 300 puntos</li>
+                    </ul>
+                    <button id="cargar-puntos">Cargar</button>
+                </div>
+                
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <p id="footer-text">Recompensa tu esfuerzo</p>
+    </footer>
+    <script src="./scripts.js"></script>
+</body>
+</html>
